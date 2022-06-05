@@ -11,10 +11,12 @@
                 NodeJS/Express, MongoDB/Mongoose, SQL, C#, Asp.Net, and MVC architecture.
             </p>
             <div class="d-flex d-md-block justify-content-between align-items-center py-2 mt-2">
-                <button class="btn about-btn">
-                    About Me
-                </button>
-                <a asp-page="" class="d-md-inline ml-sm-2 ml-5 contact-btn">Contact Me</a>
+                <a class="btn about-btn" href="~/Images/Updated Resume.pdf" download>
+                    Download CV <i class="fa-solid fa-download"></i>
+                </a>
+                <a href="#contact" class="d-md-inline ml-sm-2 ml-5 btn contact-btn">
+                    Contact Me <i class="fa-solid fa-phone"></i>
+                </a>
             </div>
         </div>
         <div class="mt-3 md-mt-0">
@@ -186,6 +188,98 @@
                     I ensured industrial safety standards were maintained in the workshop environment.
                 </li>
             </ul>
+        </div>
+    </div>
+</div>
+<div class="education">
+    <div class="custom-container">
+        <h2 class="text-center">Education</h2>
+        <div class="underline-border text-center"></div>
+        <div class="grid-logo text-center text-md-left">
+            <div class="logo-title-section">
+                <img class="logo-coy" src="~/Images/fupre-logo.jpg" alt="Federal University of Petroleum Resource" />
+            </div>
+            <div>
+               <h3>Federal University of Petroleum Resource</h3>
+                <h5><i class="fa-solid fa-location-dot"></i> Effurun, Nigeria</h5>
+                <h5>Bachelor of Engineering (Mechanical Engineering)</h5>
+                <p>January 2014 - November 2019</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="projects">
+    <div class="custom-container">
+        <h2 class="text-center">Projects</h2>
+        <div class="underline-border text-center"></div>
+        <div class="custom-grid align-items-start">
+            <img src="~/Images/tip-calculator.png" />
+            <div class="project-description">
+                <h4>Tip Calculator</h4>
+                <p>
+                    A web application that calculates the tips a person or group of person pays based
+                    on their bills, tip percentage and number of person splitting the bill.<br /><br />
+                    The project is based on design and specification of a frontend mentors challenge.<br /><br />
+                    <strong>Tools: </strong>HTML, CSS and Javascript.
+                </p>
+                <div>
+                    <a target="_blank" href="https://github.com/Nwachukwu-Uzor/tip-calculator" class="preview-link"><i class="fa-brands fa-github"></i> Github</a>
+                    <a target="_blank" href="https://tip-calculator-uzor.netlify.app" class="preview-link"><i class="fa-solid fa-eye"></i> Live</a>
+                </div>
+            </div>
+        </div>
+        <div class="custom-grid align-items-start">
+            <img src="~/Images/dev-hire.png" />
+            <div class="project-description">
+                <h4>Dev Hire</h4>
+                <p>
+                   A web application that allows freelancers to register and get jobs. It contains a landing page
+                    That displays a list of freelancers showing: their avatar, banner images, asking prices and display name.<br /><br />
+                    A user can add a developer to his favorites by clicking the like button and can view all favorite freelancer on a
+                    favorites page.<br /><br />
+                    The page also has a currency converter that allows a user convert the developers asking 
+                    price to a list of other currencies
+                    <br /><br />
+                    <strong>Tools: </strong>ReactJs, Redux Toolkit, React Router, axios and SASS.
+                </p>
+                <div>
+                    <a target="_blank" href="https://github.com/Nwachukwu-Uzor/dev-hire" class="preview-link"><i class="fa-brands fa-github"></i> Github</a>
+                    <a target="_blank" href="https://dev-hire-ui.netlify.app/" class="preview-link"><i class="fa-solid fa-eye"></i> Live</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact">
+    <div class="custom-container">
+        <h2 class="text-center">Contact Me</h2>
+        <div class="underline-border text-center"></div>
+        <div class="custom-grid align-items-start">
+            <div class="socials">
+                <h2>FIND ME</h2>
+            </div>
+            <div>
+                <div class="contact-form-wrapper d-flex justify-content-center">
+                    <form action="#" class="contact-form">
+                        <h5 class="title">Contact me</h5>
+                        <p class="description">
+                            Feel free to send me a message.
+                        </p>
+                        <div>
+                            <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name" required>
+                        </div>
+                        <div>
+                            <input type="email" class="form-control rounded border-white mb-3 form-input" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="submit-button-wrapper">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>
