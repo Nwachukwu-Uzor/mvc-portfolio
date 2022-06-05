@@ -20,6 +20,61 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0.25rem auto;
+}
+
+ul {
+    list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    h1, h2, h3, h4, h5 {
+        margin: 0.5rem auto;
+    }
+
+}
+
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
@@ -184,4 +239,79 @@ body {
     background-color: var(--primary-background);
 }
 
+.skill-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: 40vh;
+}
 
+.skill {
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 1px -1px 5px 3px rgba(217,198,198,0.64);
+    -webkit-box-shadow: 1px -1px 5px 3px rgba(217,198,198,0.64);
+    -moz-box-shadow: 1px -1px 5px 3px rgba(217,198,198,0.64);
+}
+
+.skill:hover {
+    opacity: 0.85;
+}
+
+/*
+    Experience
+*/
+.grid-logo {
+    display: grid;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+
+@media screen and (min-width: 768px) {
+    .grid-logo {
+        grid-template-columns: 1fr 4fr;
+    }
+}
+
+.logo-coy {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.location-icon {
+    margin-right: 0.5rem;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 700;
+}
+/*@media screen and (min-width: 768px) {
+    .logo-coy {
+        width: 250px;
+        height: 250px;
+    }
+}*/
+.achievement {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.achievement i {
+    font-size: 0.7rem;
+    margin-right: 1rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
