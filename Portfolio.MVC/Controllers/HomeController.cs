@@ -27,8 +27,10 @@ namespace Portfolio.MVC.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Index(EmailViewModel model)
         {
+            
             try
             {
                 if (!ModelState.IsValid) { 
@@ -36,7 +38,8 @@ namespace Portfolio.MVC.Controllers
                 }
 
                 await _emailService.SendMail(model);
-                return RedirectToAction(nameof(Sent), new SentViewModel { Name = model.Name } );
+               TempData["Sender"] = model.Name;
+                return RedirectToAction(nameof(Sent));
             } catch(Exception ex)
             {
                 TempData["Error"] = ex.Message;
@@ -45,9 +48,9 @@ namespace Portfolio.MVC.Controllers
            
         }
 
-        public IActionResult Sent(SentViewModel sendView)
+        public IActionResult Sent()
         {
-            return View(sendView);
+            return View();
         }
 
         public IActionResult Privacy()
