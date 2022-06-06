@@ -1,0 +1,13 @@
+﻿@model Portfolio.MVC.Models.SentViewModel
+
+@{
+    TempData["Title"] = "Sent";
+}
+
+<div class="sent-view">
+    <div class="sent-detail">
+        <h4>Message Sent Successfully <span class="emoji">📧</span></h4>
+        <p>Hello @Model.Name, your message has been successfully deliver <span class="emoji">🚀</span></p>
+        <a asp-action="index" class="home-link">Back to Home</a>
+    </div>
+</div>

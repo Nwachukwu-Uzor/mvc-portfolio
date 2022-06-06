@@ -6,6 +6,7 @@ for details on configuring this project to bundle and minify static web assets. 
     --primary-background: #ecf6f8;
     --secondary-color: #921267;
     --white: #fff;
+    --custom-box-shadow: 1px -1px 5px 3px rgba(217,198,198,0.64);
 }
 
 * {

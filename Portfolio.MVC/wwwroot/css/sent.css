@@ -1,0 +1,40 @@
+﻿.sent-view {
+    min-height: 80vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.sent-detail {
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    box-shadow: var(--custom-box-shadow);
+    -webkit-box-shadow: var(--custom-box-shadow);
+    -moz-box-shadow: var(--custom-box-shadow);
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.sent-detail h4 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.home-link:link, .home-link:visited {
+    color: var(--secondary-color);
+    text-decoration: none;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    display: block;
+    font-weight: 700;
+}
+
+.home-link:hover, .home-link:focus {
+    opacity: 0.9;
+}

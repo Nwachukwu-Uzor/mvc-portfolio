@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Portfolio.MVC.Models.EmailViewModel 
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -265,19 +267,49 @@
             </div>
             <div>
                 <div class="contact-form-wrapper d-flex justify-content-center">
-                    <form action="#" class="contact-form">
+                    <form asp-action="index" class="contact-form">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <h5 class="title">Contact me</h5>
                         <p class="description">
                             Feel free to send me a message.
                         </p>
+                        @if (TempData["Error"] != null)
+                        {
+                            <div class="d-flex align-items-center justify-content-center">
+                                <p class="alert alert-danger text-white bold py-1 w-100">Alert @TempData["Error"]</p>
+                            </div>
+                        }
                         <div>
-                            <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name" required>
+                            <input type="text"
+                                   class="form-control rounded border-white mb-3 form-input"
+                                   id="name" placeholder="Subject" required
+                                   asp-for="Subject" 
+                            />
                         </div>
                         <div>
-                            <input type="email" class="form-control rounded border-white mb-3 form-input" placeholder="Email" required>
+                            <input type="text"
+                                   class="form-control rounded border-white mb-3 form-input"
+                                   id="name" placeholder="Name" required
+                                   asp-for="Name" />
                         </div>
                         <div>
-                            <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Message" required></textarea>
+                            <input type="tel"
+                                   class="form-control rounded border-white mb-3 form-input"
+                                   id="name" placeholder="Phone" required
+                                   asp-for="Phone" />
+                        </div>
+                        <div>
+                            <input type="email"
+                                   class="form-control rounded border-white mb-3 form-input"
+                                   placeholder="Email" required
+                                   asp-for="Email">
+                        </div>
+                        <div>
+                            <textarea id="message"
+                                      class="form-control rounded border-white mb-3 form-text-area"
+                                      rows="5" cols="30" placeholder="Message"
+                                      required
+                                      asp-for="Message"></textarea>
                         </div>
                         <div class="submit-button-wrapper">
                             <input type="submit" value="Send">
