@@ -62,6 +62,7 @@
 
     .page-header__top, .page-header__bottom {
         display: block;
+        flex: 3;
     }
 
     .page-header__toggle {
