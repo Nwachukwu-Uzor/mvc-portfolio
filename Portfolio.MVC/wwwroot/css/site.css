@@ -178,6 +178,10 @@ html {
     align-items: center;
 }
 
+.emoji {
+    font-size: 2rem;
+}
+
 .about-btn {
     background-color: #921267;
     color: #fff;
