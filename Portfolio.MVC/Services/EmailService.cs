@@ -41,7 +41,7 @@ namespace Portfolio.MVC.Services
                   }},
                  {"Subject", model.Subject},
                  {"TextPart", "New Request From Portfolio"},
-                 {"HTMLPart", $"<h3>From : {model.Name} <br /> Details: {model.Phone},  {model.Email}  <br /> Message : {model.Message} </h3>"}
+                 {"HTMLPart", $"<h3>From : {model.Name} <br /> Details: {model.Phone},  {model.Email}  <br />+2 Message : {model.Message} </h3>"}
                  }
                 });
             MailjetResponse response = await client.PostAsync(request);
